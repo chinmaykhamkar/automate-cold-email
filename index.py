@@ -7,8 +7,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 
 load_dotenv()
-col_names = ['name', 'email', 'company']
-excel_file = './apollo-contacts-export.csv'
+# make sure that the column names containing name, company name and email are "First Name", "Company" and "Email" resp
+excel_file = 'your csv file.csv'
 df = pd.read_csv(excel_file)
 
 
