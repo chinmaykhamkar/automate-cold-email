@@ -5,7 +5,7 @@
 - paste the csv file with names, company names and email ids of people you want to cold email
 - make sure the column names are First Name, Company, Email
 - paste pdf doc like a resume you want to attach
-- create a .env file and the following
+- create a .env file and add the following
   
 ```
 SMTP_USERNAME="your email"
