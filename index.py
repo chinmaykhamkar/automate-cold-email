@@ -15,8 +15,6 @@ from email.mime.application import MIMEApplication
 smtp_username = os.getenv("SMTP_USERNAME")
 smtp_password = os.getenv("SMTP_PASSWORD")
 sender_email = "chinmaykhamkar8@gmail.com"
-# smtp_username = "khamkarchinmay4@gmail.com"
-# smtp_password = "jkeofaissmhmfmuz"
 
 # Email template
 email_subject = "Subject of your email"
