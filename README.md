@@ -6,7 +6,11 @@
 - make sure the column names are First Name, Company, Email
 - paste pdf doc like a resume you want to attach
 - create a .env file and the following
-  ```SMTP_USERNAME="your email" SMTP_PASSWORD="your password"```
+  
+```
+SMTP_USERNAME="your email"
+SMTP_PASSWORD="your password"
+```
 - steps to get this password for your Gmail account - [link](https://www.youtube.com/shorts/n9Ooxum-iUo)
 - change the ```email_body_template``` according to your cold email. tip :- use html email template to add embedded links to your email.
 - after completing the above steps, run ```python index.py``` and let the script run.
