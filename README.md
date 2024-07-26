@@ -14,5 +14,6 @@ SMTP_PASSWORD="your password"
 ```
 - steps to get this password for your Gmail account - [link](https://www.youtube.com/shorts/n9Ooxum-iUo)
 - change the ```email_body_template``` according to your cold email. tip :- use html email template to add embedded links to your email.
+- add the file path to csv file or any pdf docs in the code (line 11 and line 48)
 - after completing the above steps, run ```python index.py``` and let the script run.
 - If any issues then you can open one.
