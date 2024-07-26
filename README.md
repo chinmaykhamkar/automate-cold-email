@@ -4,6 +4,7 @@
 - ```pip install pandas python-dotenv openpyxl```
 - paste the csv file with names, company names and email ids of people you want to cold email
 - make sure the column names are First Name, Company, Email
+- you can use Apollo.io to get emails
 - paste pdf doc like a resume you want to attach
 - create a .env file and add the following
   
