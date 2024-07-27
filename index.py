@@ -26,9 +26,8 @@ email_body_template = """Hello {name},
 <br>
 I'm John Doe, writing this email to apply for xyx role at {company}.
 <br>
-your cold email body here
 <br>
-<a href="{linkedin_link}">LinkedIn</a> | <a href="{github_link}">GitHub</a> | <a href="{portfolio_link}">Portfolio</a>
+<a href="{linkedin_link}">LinkedIn</a> | <a href="{github_link}">GitHub</a> | <a href="{portfolio_link}">Leetcode</a>
 <br>
 """
 
@@ -36,16 +35,16 @@ for index, row in df.iterrows():
     time.sleep(random.randint(1, 5))
 
     message = MIMEMultipart()
-    message['Subject'] = f"Application for Software Engineer Position at {row['Company']}"
+    message['Subject'] = f"Internship Inquiry cum Application @{row['Company']} - Tanishq Ranjan, NIT Delhi"
     message['From'] = smtp_username
     message['To'] = row['Email']
 
     email_body = email_body_template.format(
         name=row['First Name'], 
         company=row['Company'], 
-        linkedin_link="your-linkedin-url",
-        github_link="your-github-url",
-        portfolio_link="your-portfolio-url"
+        linkedin_link="https://in.linkedin.com/in/tanishq-ranjan-26a52740",
+        github_link="https://github.com/x-INFiN1TY-x",
+        portfolio_link="https://leetcode.com/u/211220058/"
     )
     message.attach(MIMEText(email_body, 'html'))
 
