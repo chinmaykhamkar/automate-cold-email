@@ -22,14 +22,89 @@ server.ehlo()
 server.starttls()
 server.login(smtp_username, smtp_password)
 
-email_body_template = """Hello {name},
+email_body_template = """
+Hi {name},
 <br>
-I'm John Doe, writing this email to apply for xyx role at {company}.
 <br>
+I hope this message finds you well. My name is Tanishq Ranjan, a 4th Year engineering undergraduate at the National Institute of Technology Delhi. I am reaching out to express my interest in an internship opportunity at {company}.
+<br>
+<br>
+<strong>About Me:</strong>
+<br>
+<br>
+<strong>1. Education:</strong>
+<br>
+- B.Tech Major in Electronics and Communication Engineering with a Minor in AI & ML from NIT Delhi, Graduating 2025.
+<br>
+<br>
+<strong>2. Project Experience:</strong>
+<br>
+- SDE Intern at Mavenir Systems Pvt Ltd
+<br>
+- Machine Learning Project Intern at DRDO - LRDE
+<br>
+- Big Data Analytics & ML Intern at DRDO - ISSA
+<br>
+- AI Project Intern at Ministry of Electronics & IT, Govt. of India
+<br>
+- Full Stack Web Development Intern at CYRAN AI Solutions, IIT Delhi
+<br>
+<br>
+<strong>3. Technical Skills:</strong>
+<br>
+- Programming Languages: C++, Python, JavaScript
+<br>
+- Machine Learning & AI: PyTorch, TensorFlow, Neural Networks, NLP, Computer Vision
+<br>
+- Web Development: MongoDB, MySQL, Express.js, Node.js, CSS
+<br>
+- Big Data & DevOps: Apache Kafka, Apache Spark
+<br>
+- Frameworks & Libraries: Streamlit, JQuery, Scikit-Learn, Pandas, Numpy, Seaborn
+<br>
+<br>
+<strong>4. Achievements:</strong>
+<br>
+- LeetCode Rating: 1930+ (Knight ranked)
+<br>
+- Selected for Amazon ML School 2024
+<br>
+- Secured 98.4th Percentile out of 1.1 million candidates in JEE Mains 2021
+<br>
+<br>
+I would be thrilled to discuss how my background, skills, and projects align with the goals of {company}. If you're available, I would love to schedule a call to explore this opportunity further.
+<br>
+<br>
+Thank you for your time and consideration. I look forward to the possibility of contributing to {company}.
+<br>
+<br>
+Please find my resume attached. You can also connect with me on:
 <br>
 <a href="{linkedin_link}">LinkedIn</a> | <a href="{github_link}">GitHub</a> | <a href="{portfolio_link}">Leetcode</a>
 <br>
+<br>
+Best Regards,
+<br>
+<br>
+<strong>Tanishq Ranjan</strong>
+<br>
+4th Year Undergraduate Student
+<br>
+Department of Electronics and Communication Engineering
+<br>
+National Institute of Technology Delhi
+<br>
+<br>
+<strong>Email:</strong> 211220058@nitdelhi.ac.in
+<br>
+<strong>Phone:</strong> (+91) 9113963397
+<br>
+<br>
+====================================================================
+<br>
+NATIONAL INSTITUTE OF TECHNOLOGY DELHI [NITD]
 """
+
 
 for index, row in df.iterrows():
     time.sleep(random.randint(1, 5))
