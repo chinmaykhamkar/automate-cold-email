@@ -1,5 +1,5 @@
 
-# Automate Cold Email
+# Automated Coldmailer
 
 A Python script to automate sending cold emails with attachments.
 
